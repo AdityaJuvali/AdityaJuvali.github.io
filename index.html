@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aditya J | Machine Learning Engineer</title>
+  <meta name="description" content="Aditya Juvali — Lead Machine Learning Engineer specializing in production AI evaluation systems for LLMs, RAG, and agentic workflows." />
+  <style>
+    :root { --bg:#0b1020; --panel:rgba(255,255,255,.06); --panel2:rgba(255,255,255,.1); --text:#e8edf7; --muted:#a8b3c7; --accent:#7c9cff; --accent2:#5eead4; --border:rgba(255,255,255,.1); --shadow:0 24px 80px rgba(0,0,0,.35); }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top left,rgba(124,156,255,.16),transparent 30%),radial-gradient(circle at top right,rgba(94,234,212,.12),transparent 28%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;position:sticky;top:0;backdrop-filter:blur(14px);background:rgba(11,16,32,.72);border-bottom:1px solid var(--border);padding:14px 20px;margin:-32px -20px 28px;z-index:10}
+    .brand{font-weight:700;letter-spacing:.2px}.navlinks{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+    .hero{padding:52px 0 18px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .eyebrow{color:var(--accent2);font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+    h1{font-size:clamp(40px,7vw,72px);line-height:.95;margin:10px 0 14px}.subtitle{font-size:20px;color:var(--muted);max-width:62ch}
+    .cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 16px;border-radius:999px;border:1px solid var(--border);background:var(--panel);box-shadow:var(--shadow);font-weight:600}.btn.primary{background:linear-gradient(135deg,var(--accent),#4f7cff);border-color:transparent;color:white}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)} .profile{padding:22px}
+    .big{font-size:18px;font-weight:700;margin-bottom:6px}.meta{color:var(--muted);font-size:14px}.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.pill{font-size:13px;padding:8px 12px;border-radius:999px;background:var(--panel2);border:1px solid var(--border)}
+    section{padding:18px 0 0}.section-title{font-size:22px;margin:0 0 14px}.grid{display:grid;gap:16px}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.project,.exp{padding:18px}.project h3,.exp h3{margin:0 0 8px;font-size:18px}.project p,.exp p{margin:0;color:var(--muted)}.tagline,.role{color:var(--accent2);font-size:13px;font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:.08em}
+    .experience{grid-template-columns:repeat(2,minmax(0,1fr))}.footer{color:var(--muted);font-size:14px;padding:26px 0 10px}
+    @media (max-width:860px){.hero,.projects,.experience{grid-template-columns:1fr}.nav{position:static;margin-top:0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Aditya Juvali</div>
+      <div class="navlinks"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+    </div>
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Lead Machine Learning Engineer</div>
+        <h1>Production AI systems for LLMs, RAG, and agentic workflows.</h1>
+        <div class="subtitle">I build and ship AI products that are observable, scalable, and useful in production. My work focuses on model quality, retrieval performance, and cloud-native deployment.</div>
+        <div class="cta"><a class="btn primary" href="https://github.com/AdityaJuvali" target="_blank" rel="noreferrer">GitHub</a><a class="btn" href="#projects">Selected Projects</a><a class="btn" href="#contact">Contact</a></div>
+      </div>
+      <div class="card profile">
+        <div class="big">About</div>
+        <div class="meta">Jersey City, NJ</div>
+        <p style="margin:14px 0 0;color:var(--muted);">Lead Machine Learning Engineer specializing in production AI systems for LLMs, RAG, and agentic workflows. Experienced building scalable metric pipelines using Langfuse, MLflow, and cloud-native evaluation infrastructure.</p>
+        <div class="pills"><span class="pill">Langfuse</span><span class="pill">MLflow</span><span class="pill">Hit@k / NDCG</span><span class="pill">GCP</span><span class="pill">Vertex AI</span><span class="pill">Neo4j</span></div>
+      </div>
+    </header>
+    <section id="projects"><h2 class="section-title">Key AI Projects</h2><div class="grid projects">
+      <article class="card project"><div class="tagline">Thoughtworks</div><h3>Agentic Research Assistant</h3><p>Built a production RAG platform on GCP using Gemini, ADK, MCP, and Vertex AI Search for enterprise market research workflows. Added Langfuse tracing and a RAG evaluation pipeline using Hit@k, NDCG, retrieval relevance scoring, and re-ranking to improve grounded response quality while maintaining an eval pass rate above 95% for the bottom quartile of user queries.</p></article>
+      <article class="card project"><div class="tagline">Tiger Analytics</div><h3>Underwriting Decision Assistant</h3><p>Architected a GenAI underwriting workflow on GCP combining Neo4j knowledge-graph retrieval, vector search, and GPT-4o policy risk summaries. Defined evaluation criteria for retrieval relevance, answer faithfulness, and narrative completeness, helping reduce underwriting decision time by 23% per business line.</p></article>
+      <article class="card project"><div class="tagline">Tiger Analytics</div><h3>GPT-Powered Upsell Engine</h3><p>Designed a production recommendation engine using clustering, decision trees, and GPT-powered explanation logic for a quick-service restaurant client. Led A/B testing and validation workflows to compare recommendation quality against business rules and support measurable revenue lift.</p></article>
+      <article class="card project"><div class="tagline">Tiger Analytics</div><h3>Insurance Pricing Models</h3><p>Improved auto insurance risk segmentation by 6% through GLM, CatBoost, and LightGBM models with geospatial feature engineering, reproducible pipelines, and MLflow-based validation and review workflows.</p></article>
+    </div></section>
+    <section id="experience"><h2 class="section-title">Experience</h2><div class="grid experience">
+      <article class="card exp"><div class="role">Thoughtworks</div><h3>Lead Machine Learning Engineer</h3><p>Lead end-to-end development of production AI applications focused on agentic workflows, RAG, and enterprise research automation. Build secure, tenant-aware platforms on GCP with scalable orchestration, structured data access, and user-facing reporting workflows.</p></article>
+      <article class="card exp"><div class="role">Tiger Analytics</div><h3>Senior Data Scientist</h3><p>Delivered AI and ML solutions across insurance and retail use cases, spanning GenAI assistants, recommendation systems, and pricing models. Built cloud-native pipelines on GCP for model deployment, experimentation, explainability, and business-facing decision support.</p></article>
+      <article class="card exp"><div class="role">Incedo Inc</div><h3>Senior Data Scientist</h3><p>Developed ML solutions for financial services and telecom, including customer segmentation, topic modeling, and delay scoring. Deployed scoring services and analytics pipelines on Azure.</p></article>
+      <article class="card exp"><div class="role">IBM</div><h3>System Engineer</h3><p>Built forecasting and decision-support workflows for internal operations, with dashboards and automated business rules to improve responsiveness and planning.</p></article>
+    </div></section>
+    <section id="skills"><h2 class="section-title">Skills</h2><div class="card profile"><p style="margin:0;color:var(--muted);"><strong style="color:var(--text);">Evaluation & Observability:</strong> Langfuse, MLflow, A/B testing, model evaluation, explainability, model monitoring, drift detection, regression testing<br><br><strong style="color:var(--text);">AI/ML:</strong> LLM applications, RAG, agentic workflows, NLP, predictive modeling, clustering, re-ranking<br><br><strong style="color:var(--text);">Cloud & Data:</strong> GCP, Vertex AI, Azure, AWS, Neo4j, BigQuery, Snowflake, ChromaDB, Cloud Run, SHAP, GitHub</p></div></section>
+    <section id="contact"><h2 class="section-title">Contact</h2><div class="card profile"><p style="margin:0;color:var(--muted);">GitHub: <a href="https://github.com/AdityaJuvali" target="_blank" rel="noreferrer">github.com/AdityaJuvali</a><br>Location: Jersey City, NJ</p></div></section>
+    <div class="footer">Built as a GitHub Pages profile.</div>
+  </div>
+</body>
+</html>
